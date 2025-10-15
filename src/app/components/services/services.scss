@@ -1,0 +1,32 @@
+.services {
+  .services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+  }
+
+  .service-card {
+    text-align: center;
+
+    .service-icon {
+      font-size: 4rem;
+      margin-bottom: var(--spacing-md);
+      filter: grayscale(1);
+      transition: filter var(--transition-base);
+    }
+
+    &:hover .service-icon {
+      filter: grayscale(0);
+    }
+
+    h3 {
+      font-size: 1.5rem;
+      margin-bottom: var(--spacing-sm);
+    }
+
+    p {
+      margin: 0;
+    }
+  }
+}
+

@@ -1,0 +1,21 @@
+<section class="team" id="team">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-subtitle">EQUIPO</span>
+      <h2>Mentes creativas</h2>
+    </div>
+    
+    <div class="team-grid">
+      @for (member of team; track member.name) {
+        <div class="team-card card">
+          <div class="member-avatar" [style.background-color]="member.color">
+            {{ member.initials }}
+          </div>
+          <h3>{{ member.name }}</h3>
+          <p>{{ member.role }}</p>
+        </div>
+      }
+    </div>
+  </div>
+</section>
+

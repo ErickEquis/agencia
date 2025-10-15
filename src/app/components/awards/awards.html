@@ -1,0 +1,19 @@
+<section class="awards">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-subtitle">RECONOCIMIENTOS</span>
+      <h2>Premios y logros</h2>
+    </div>
+    
+    <div class="awards-grid">
+      @for (award of awards; track award.title) {
+        <div class="award-card card">
+          <div class="award-icon">{{ award.icon }}</div>
+          <h3>{{ award.title }}</h3>
+          <p>{{ award.year }}</p>
+        </div>
+      }
+    </div>
+  </div>
+</section>
+
